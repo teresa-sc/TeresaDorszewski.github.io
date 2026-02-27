@@ -1,115 +1,151 @@
----
----
 
-@string{aps = {American Physical Society,}}
+@inproceedings{dorszewski2025colors,
+  title={From Colors to Classes: Emergence of Concepts in Vision Transformers},
+  author={Dorszewski, Teresa and T{\v{e}}tkov{\'a}, Lenka and Jenssen, Robert and Hansen, Lars Kai and Wickstrøm, Kristoffer Knutsen},
+  abbr={xAI 2025},
+  booktitle={World Conference on Explainable Artificial Intelligence},
+  year={2025},
+  month={jul},
+  code={https://github.com/teresa-sc/concepts_in_ViTs},
+  selected={true},
+  arxiv={2503.24071},
+  abstract={Vision Transformers (ViTs) are increasingly utilized in various computer vision tasks due to their powerful representation capabilities. However, it remains understudied how ViTs process information layer by layer. Numerous studies have shown that convolutional neural networks (CNNs) extract features of increasing complexity throughout their layers, which is crucial for tasks like domain adaptation and transfer learning. ViTs, lacking the same inductive biases as CNNs, can potentially learn global dependencies from the first layers due to their attention mechanisms. Given the increasing importance of ViTs in computer vision, there is a need to improve the layer-wise understanding of ViTs. In this work, we present a novel, layer-wise analysis of concepts encoded in state-of-the-art ViTs using neuron labeling. Our findings reveal that ViTs encode concepts with increasing complexity throughout the network. Early layers primarily encode basic features such as colors and textures, while later layers represent more specific classes, including objects and animals. As the complexity of encoded concepts increases, the number of concepts represented in each layer also rises, reflecting a more diverse and specific set of features.
+Additionally, different pretraining strategies influence the quantity and category of encoded concepts, with finetuning to specific downstream tasks generally reducing the number of encoded concepts and shifting the concepts to more relevant categories.},
+  additional_info = {. Won the **best poster award** at Danish Digitalization, Data Science and AI 3.0 (D3A 2025).},
+  preview={colors_to_concepts.png},
+  video={https://youtu.be/pSPuvpABKbM?si=epECim1EI-uc4pGI},
+  poster={poster_ColorsToClasses.pdf}
+  }
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{wedenborg2026explaining,
+  title={Explaining latent representations of neural networks with archetypal analysis},
+  author={Wedenborg, Anna Emilie Jennow and Dorszewski, Teresa and Hansen, Lars Kai and Wickstr{\o}m, Kristoffer Knutsen and M{\o}rup, Morten},
+  abbr={NLDL 2026}
+  booktitle={Northern Lights Deep Learning Conference 2026},
+  year={2026},
+  month={jan},
+  code={},
+  selected={true},
+  abstract={We apply Archetypal Analysis to the latent spaces of trained neural networks, offering interpretable explanations of feature representations of neural networks without relying on user-defined corpora. Through layer-wise analyses of convolutional networks and vision transformers across multiple classification tasks, we demonstrate that archetypes are robust, dataset-independent, and provide intuitive insights into how models encode and transform information from layer to layer. Our approach enables global insights by characterizing the unique structure of the latent representation space of each layer, while also offering localized explanations of individual decisions as convex combinations of extreme points (i.e., archetypes).},
+  preview={aa.png}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@article{tetkova2025convexity,
+    title={On convex decision regions in deep network representations},
+    author={T{\v{e}}tkov{\'a}, Lenka and Br{\"u}sch, Thea and Dorszewski, Teresa and Mager, Fabian Martin and Aagaard, Rasmus {\O}rtoft and Foldager, Jonathan and Alstr{\o}m, Tommy Sonne and Hansen, Lars Kai},
+    journal={Nature Communications},
+  volume={16},
+  DOI={10.1038/s41467-025-60809-y},
+  number={1},
+  year={2025},
+  month={jul},
+  arxiv={2305.17154},
+    selected={true},
+    url={https://www.nature.com/articles/s41467-025-60809-y},
+    preview = {convexity.png},
+    abstract = {Current work on human-machine alignment aims at understanding machine-learned latent spaces and their relations to human representations. We study the convexity of concept regions in machine-learned latent spaces, inspired by Gärdenfors’ conceptual spaces. In cognitive science, convexity is found to support generalization, few-shot learning, and interpersonal alignment. We develop tools to measure convexity in sampled data and evaluate it across layers of state-of-the-art deep networks. We show that convexity is robust to relevant latent space transformations and, hence, meaningful as a quality of machine-learned latent spaces. We find pervasive approximate convexity across domains, including image, text, audio, human activity, and medical data. Fine-tuning generally increases convexity, and the level of convexity of class label regions in pretrained models predicts subsequent fine-tuning performance. Our framework allows investigation of layered latent representations and offers new insights into learning mechanisms, human-machine alignment, and potential improvements in model generalization.},
+    abbr = {Nat Commun},
+    code = {https://github.com/LenkaTetkova/Convexity-of-representations},
+    additional_info={. Also presented at ICLR 2024 Workshop on Representational Alignment (Re-Align)},
+    poster={poster_convexity.pdf},
+    video={https://youtu.be/qXBT_-w3Mfs?feature=shared&t=1795},
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+
+@inproceedings{dorszewski2025redundant,
+  title={How Redundant Is the Transformer Stack in Speech Representation Models?},
+  author={Dorszewski, Teresa and Jacobsen, Albert Kj{\o}ller and T{\v{e}}tkov{\'a}, Lenka and Hansen, Lars Kai},
+  booktitle={ICASSP 2025-2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2025},
+  month={apr},
+  organization={IEEE},
+  abbr = {ICASSP 2025},
+  selected={true},
+  url={https://ieeexplore.ieee.org/iel8/10887540/10887541/10887866.pdf?casa_token=wl3wZzOCAG4AAAAA:WWNjO03ZMVlz53liyP3z-jJdKbG6yoHf1KMvIyP3iAME3yqxOvcPS8z45G27sCPKzQ9gybItlw},
+  additional_info = {. Also presented at 4th NeurIPS Efficient Natural Language and Speech Processing Workshop (ENLSP-IV 2024) -- **Runner up for the best short paper award at the workshop**},
+  arxiv={2409.16302},
+  abstract={Self-supervised speech representation models, particularly those leveraging transformer architectures, have demonstrated remarkable performance across various tasks such as speech recognition, speaker identification, and emotion detection. Recent studies on transformer models revealed high redundancy between layers and the potential for significant pruning, which we will investigate here for transformer-based speech representation models. We perform a detailed analysis of layer similarity in speech representation models using three similarity metrics: cosine similarity, centered kernel alignment, and mutual nearest-neighbor alignment. Our findings reveal a block-like structure of high similarity, suggesting two main processing steps and significant redundancy of layers. We demonstrate the effectiveness of pruning transformer-based speech representation models without the need for post-training, achieving up to 40% reduction in transformer layers while maintaining over 95% of the model’s predictive capacity. Furthermore, we employ a knowledge distillation method to substitute the entire transformer stack with mimicking layers, reducing the network size by 95-98% and the inference time by up to 94%. This substantial decrease in computational load occurs without considerable performance loss, suggesting that the transformer stack is almost completely redundant for downstream applications of speech representation models.},
+  preview={redundancy.png},
+  video={https://lenkatetkova.github.io/assets/video/ICASSP_presentation_5825.mp4},
+  poster={poster_redundancy.pdf},
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@inproceedings{tetkova2024knowledge,
+  title={Knowledge graphs for empirical concept retrieval},
+  author={T{\v{e}}tkov{\'a}, Lenka and Scheidt, Teresa Karen and Fogh, Maria Mandrup and J{\o}rgensen, Ellen Marie Gaunby and Nielsen, Finn {\AA}rup and Hansen, Lars Kai},
+  booktitle={World Conference on Explainable Artificial Intelligence},
+  pages={160--183},
+  year={2024},
+  month={jul},
+  organization={Springer},
+  arxiv={2404.07008},
+  selected={true},
+  code = {https://github.com/LenkaTetkova/Knowledge-Graphs-for-Empirical-Concept-Retrieval},
+  abbr = {xAI 2024},
+  abstract = {Concept-based explainable AI is promising as a tool to improve the understanding of complex models at the premises of a given user, viz.\ as a tool for personalized explainability. An important class of concept-based explainability methods is constructed with empirically defined concepts, indirectly defined through a set of positive and negative examples, as in the TCAV approach (Kim et al., 2018). While it is appealing to the user to avoid formal definitions of concepts and their operationalization, it can be challenging to establish relevant concept datasets. Here, we address this challenge using general knowledge graphs (such as, e.g., Wikidata or WordNet) for comprehensive concept definition and present a workflow for user-driven data collection in both text and image domains. The concepts derived from knowledge graphs are defined interactively, providing an opportunity for personalization and ensuring that the concepts reflect the user's intentions. We test the retrieved concept datasets on two concept-based explainability methods, namely concept activation vectors (CAVs) and concept activation regions (CARs) (Crabbe and van der Schaar, 2022). We show that CAVs and CARs based on these empirical concept datasets provide robust and accurate explanations. Importantly, we also find good alignment between the models' representations of concepts and the structure of knowledge graphs, i.e., human representations. This supports our conclusion that knowledge graph-based concepts are relevant for XAI.},
+  doi = {10.1007/978-3-031-63787-2_9},
+  preview={knowledge_graphs.png},
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
+@article{dorszewski2024connecting,
+  title={Connecting Concept Convexity and Human-Machine Alignment in Deep Neural Networks},
+  author={Dorszewski, Teresa and T{\v{e}}tkov{\'a}, Lenka and Linhardt, Lorenz and Hansen, Lars Kai},
+  journal={Proceedings of the 6th Northern Lights Deep Learning Conference (NLDL)},
+  volume = 	 {265},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {jan},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v265/main/assets/dorszewski25a/dorszewski25a.pdf},
+  pages={41--50},
+  publisher={PMLR},
+  arxiv={2409.06362},
+  abbr={NLDL 2025},
+  year={2025},
+  url={https://proceedings.mlr.press/v265/dorszewski25a},
+  preview = {convexity_vs_oooa.png},
+  abstract = {Understanding how neural networks align with human cognitive processes is a crucial step toward developing more interpretable and reliable AI systems. Motivated by theories of human cognition, this study examines the relationship between convexity in
+neural network representations and human-machine alignment based on behavioral data. We identify a correlation between these two dimensions in pretrained and fine-tuned vision transformer models.
+Our findings suggest that the convex regions formed in latent spaces of neural networks to some extent align with human-defined categories and reflect the
+similarity relations humans use in cognitive tasks.
+While optimizing for alignment generally enhances convexity, increasing convexity through fine-tuning yields inconsistent effects on alignment, which suggests a complex relationship between the two. This
+study presents a first step toward understanding the relationship between the convexity of latent representations and human-machine alignment.},
+  selected={true},
+  poster={poster_nldl.pdf},
 }
 
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
+@inproceedings{dorszewski2024convexity,
+  title={Convexity Based Pruning of Speech Representation Models},
+  author={Dorszewski, Teresa and T{\v{e}}tkov{\'a}, Lenka and Hansen, Lars Kai},
+  booktitle={2024 IEEE 34th International Workshop on Machine Learning for Signal Processing (MLSP)},
+  pages={1--6},
+  year={2024},
+  month={sep},
+  organization={IEEE},
+  selected={true},
+  arxiv={2408.11858},
+  abstract = {Speech representation models based on the transformer architecture and trained by self-supervised learning have shown
+great promise for solving tasks such as speech and speaker
+recognition, keyword spotting, emotion detection, and more.
+Typically, it is found that larger models lead to better performance. However, the significant computational effort
+involved in such large transformer systems is a challenge
+for embedded and real-world applications. Recent work has
+shown that there is significant redundancy in the transformer
+models for NLP and massive layer pruning is feasible (Sajjad
+et al., 2023). Here, we investigate layer pruning in audio
+models. We base the pruning decision on a convexity criterion. Convexity of classification regions has recently been
+proposed as an indicator of subsequent fine-tuning performance in a range of application domains, including NLP and
+audio. In empirical investigations, we find a massive reduction in the computational effort with no loss of performance
+or even improvements in certain cases},
+  abbr = {IEEE MLSP 2024},
+  doi = {10.1109/MLSP58920.2024.10734716},
+  poster = {poster_mlsp.pdf},
+  url = {https://ieeexplore.ieee.org/abstract/document/10734716/},
+  video = {https://youtu.be/pSPuvpABKbM?si=epECim1EI-uc4pGI},
+  preview={convexity_pruning.png},
 }
 
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
 
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
 
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
-}
+
+
+
